@@ -20,7 +20,7 @@ s2=list(map(int,input().split()))
 s3=list(map(int,input().split()))
 
 def d2(s,a):
-	return abs(s[a[0]])>abs(s[a[1]]+s[a[2]])
+	return abs(s[a[0]])>=abs(s[a[1]]+s[a[2]])
 def dd():	
 	global s1,s2,s3
 	for s1,s2,s3 in (list(permutations((s1,s2,s3)))):
